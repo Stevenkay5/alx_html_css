@@ -1,3 +1,2 @@
-# alx_html_css
-CSS Basic
+Advanced CSS and HTML 
 By Steven K
