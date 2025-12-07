@@ -1,0 +1,155 @@
+/* Load SpinCycle_OT font */
+@font-face {
+    font-family: 'SpinCycleOT';
+    src: url('SpinCycle_OT.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Load SourceSansPro Regular */
+@font-face {
+    font-family: 'SourceSansProRegular';
+    src: url('SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Load SourceSansPro Black */
+@font-face {
+    font-family: 'SourceSansProBlack';
+    src: url('SourceSansPro-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    background: url('headphones_hero_1.jpg') no-repeat center center/cover;
+}
+
+/* CENTER CONTENT & SET MAX WIDTH */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header {
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 30px;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+/* Hover/active link color */
+.nav-links a:hover,
+.nav-links a:active {
+    color: #FF6565;
+}
+
+/* HERO SECTION */
+.hero {
+    margin-top: 150px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* BUTTON */
+.cta-btn {
+    background-color: #ff565e;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Hover/active opacity */
+.cta-btn:hover,
+.cta-btn:active {
+    opacity: 0.9;
+}
+
+/* PARAGRAPH */
+.welcome-text {
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+    font-size: 16px;
+    font-family: 'SourceSansProRegular', sans-serif;
+}
+
+/* RESPONSIVE: MOBILE VERSION ≤ 480px */
+@media screen and (max-width: 480px) {
+
+    /* Stack header vertically */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Navigation below logo */
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust hero spacing */
+    .hero {
+        margin-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .cta-btn {
+        width: 80%;
+    }
+}
